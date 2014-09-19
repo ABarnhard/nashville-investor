@@ -7,8 +7,11 @@ var morgan         = require('morgan'),
     RedisStore     = require('connect-redis')(session),
     debug          = require('../lib/debug'),
     security       = require('../lib/security'),
+    users          = require('../controllers/users'),
+    permits        = require('../controllers/permits'),
+    devApps        = require('../controllers/devapps'),
     home           = require('../controllers/home'),
-    users          = require('../controllers/users');
+    value          = require('../controllers/value');
 
 module.exports = function(app, express){
   app.use(morgan('dev'));
@@ -24,10 +27,12 @@ module.exports = function(app, express){
   app.get('/home', home.index);
   app.post('/register', users.register);
   app.post('/login', users.login);
+  app.get('/permits', permits.index);
+  app.get('/devapps', devApps.index);
+  app.get('/value', value.getData);
 
   app.use(security.bounce);
   app.delete('/logout', users.logout);
 
   console.log('Express: Routes Loaded');
 };
-

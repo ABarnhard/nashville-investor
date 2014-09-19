@@ -1,14 +1,10 @@
+// Home Factory
+
 (function(){
   'use strict';
 
-  angular.module('mean-template')
+  angular.module('prop')
   .factory('Home', ['$http', function($http){
 
-    function getMessage(){
-      return $http.get('/home');
-    }
-
-    return {getMessage:getMessage};
   }]);
 })();
-

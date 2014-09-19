@@ -17,11 +17,54 @@
 @GRAY:    #AAAAAA;
 @SILVER:  #DDDDDD;
 
-body{
-  background-color: @YELLOW;
+input.ng-invalid{
+  background-color: #FF9999;
 }
 
-input.ng-invalid, select.ng-invalid{
-  background-color: @RED;
+.pull-left {
+  float: left !important;
 }
+
+.pull-right {
+  float: right !important;
+}
+#locButtons{
+  margin: 5px;
+}
+
+#cityMap {
+  width: 400px;
+  height: 400px;
+}
+
+#loading {
+  position: fixed;
+  background-color: rgba(211, 211, 211, 0.75);
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#loadIcon{
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+#tabs ul {
+  list-style: none;
+
+  & li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+}
+
+.toggle {
+        cursor: pointer;
+      }
 

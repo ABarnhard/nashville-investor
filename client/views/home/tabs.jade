@@ -1,0 +1,25 @@
+#tabs(ng-show='loc.name')
+  ul
+    li(ng-class='{active:isSelected(1)}')
+      a(href='', ng-click='selectTab(1)') Home Value
+    li(ng-class='{active:isSelected(2)}')
+      a(href='', ng-click='selectTab(2)') Residential Development
+    li(ng-class='{active:isSelected(3)}')
+      a(href='', ng-click='selectTab(3)') Commercial Development
+    br
+  #dataContent
+    .content(ng-show='isSelected(1)')
+      canvas#value(style='width: 300px; height: 300px')
+    .content(ng-show='isSelected(2)')
+      canvas#permit-chart(width='409', height='204')
+    .content(ng-show='isSelected(3)')
+      table.table.table-hover
+        thead
+          tr
+            th Project
+            th Meeting Date
+        tbody
+          tr(ng-repeat='r in appRows')
+            td {{r.project}}
+            td {{r.meetingDate | date:'mediumDate'}}
+

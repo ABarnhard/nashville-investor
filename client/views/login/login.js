@@ -1,7 +1,7 @@
 (function(){
   'use strict';
 
-  angular.module('mean-template')
+  angular.module('prop')
   .controller('LoginCtrl', ['$scope', '$location', 'User', function($scope, $location, User){
     $scope.user = {};
 

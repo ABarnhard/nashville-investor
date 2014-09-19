@@ -13,4 +13,3 @@ require('./lib/mongodb')(db, function(){
 });
 
 module.exports = app;
-

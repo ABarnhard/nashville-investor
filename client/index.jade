@@ -7,6 +7,7 @@ html(ng-app='prop', lang='en')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     title Nashville Investor
 
+    // STYLESHEETS
     link(href='/vendor/bootstrap/dist/css/bootstrap.css', rel='stylesheet')
     link(href='/vendor/fontawesome/css/font-awesome.css', rel='stylesheet')
     link(href='/vendor/toastr/toastr.css', rel='stylesheet')
@@ -16,18 +17,19 @@ html(ng-app='prop', lang='en')
     link(rel='apple-touch-icon', href='assets/images/icons/apple-touch-icon.png')
     link(rel='apple-touch-icon', sizes='72x72', href='assets/images/icons/apple-touch-icon-72x72.png')
     link(rel='apple-touch-icon', sizes='114x114', href='assets/images/icons/apple-touch-icon-114x114.png')
-    // STYLESHEETS
+    // ZERIF STYLES
+    link(rel='stylesheet', href='assets/icon-fonts/styles.css')
     link(rel='stylesheet', href='vendor/zerif/css/bootstrap.min.css')
     link(rel='stylesheet', href='vendor/zerif/css/owl.theme.css')
     link(rel='stylesheet', href='vendor/zerif/css/owl.carousel.css')
     link(rel='stylesheet', href='vendor/zerif/css/jquery.vegas.min.css')
     link(rel='stylesheet', href='vendor/zerif/css/animate.min.css')
-    link(rel='stylesheet', href='assets/icon-fonts/styles.css')
     link(rel='stylesheet', href='vendor/zerif/css/pixeden-icons.css')
     // CUSTOM STYLES
-    link(href='/index.css', rel='stylesheet')
-    link(href='/views/home/home.css', rel='stylesheet')
-    link(rel='stylesheet', href='zerif.css')
+    link(rel='stylesheet', href='/index.css')
+    link(rel='stylesheet', href='/views/home/home.css')
+    // ZERIF CUSTOM STYLES
+    link(rel='stylesheet', href='/zerif.css')
     link(rel='stylesheet', href='vendor/zerif/css/responsive.css')
     // WEBFONT
     link(href='http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic|Montserrat:700,400|Homemade+Apple', rel='stylesheet', type='text/css')
@@ -47,6 +49,7 @@ html(ng-app='prop', lang='en')
         .col-xs-12
           #container(ng-view)
 
+    // SCRIPTS
     script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAoOoswi3fUi-t8NCGt_zFTsDFEA4FpvoU&sensor=true')
     script(src='/vendor/jquery/dist/jquery.js')
     script(src='/vendor/angular/angular.js')
@@ -57,7 +60,7 @@ html(ng-app='prop', lang='en')
     script(src='/vendor/toastr/toastr.js')
     script(src='/vendor/localforage/dist/localforage.js')
     script(src='/vendor/angular-localforage/dist/angular-localForage.js')
-    // *********** ZERIF SCRIPTS *********** //
+    // ZERIF SCRIPTS
     script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js')
     script(src='vendor/zerif/js/bootstrap.min.js')
     script(src='vendor/zerif/js/jquery.scrollTo.min.js')
@@ -68,20 +71,22 @@ html(ng-app='prop', lang='en')
     script(src='vendor/zerif/js/smoothscroll.js')
     script(src='vendor/zerif/js/jquery.vegas.min.js')
     script(src='vendor/zerif/js/zerif.js')
-
+    // CUSTOM SCRIPTS
     script(src='/config/toastr.js')
-
     script(src='/index.js')
     script(src='/nav.js')
-
+    // CONTROLLERS
     script(src='/views/home/home.js')
     script(src='/views/value/value.js')
     script(src='/views/register/register.js')
     script(src='/views/login/login.js')
     script(src='/views/logout/logout.js')
-
+    // FACTORIES
     script(src='/components/factories/home.js')
-    script(src='/components/value.js')
+    script(src='/components/factories/value.js')
+    script(src='/components/factories/res.js')
+    script(src='/components/factories/com.js')
+    script(src='/components/factories/home.js')
+    script(src='/components/factories/value.js')
     script(src='/components/factories/user.js')
     script(src='/components/factories/http-interceptor.js')
-

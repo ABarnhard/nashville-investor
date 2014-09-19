@@ -9,7 +9,6 @@
     .when('/login',    {templateUrl:'/views/login/login.html',       controller:'LoginCtrl'})
     .when('/logout',   {templateUrl:'/views/logout/logout.html',     controller:'LogoutCtrl'})
     .otherwise({redirectTo:'/'});
-
     $httpProvider.interceptors.push('HttpInterceptor');
     $localForageProvider.config({name:'prop', storeName:'cache', version:1.0});
   }]);

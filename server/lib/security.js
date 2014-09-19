@@ -17,4 +17,3 @@ exports.bounce = function(req, res, next){
     res.status(401).end();
   }
 };
-

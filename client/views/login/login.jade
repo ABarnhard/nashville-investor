@@ -1,14 +1,25 @@
-h3 Login
-
-.row
-  .col-xs-3
-    form(role='form', novalidate, name='userForm')
-      .form-group
-        label(for='email') Email
-        input.form-control#email(type='email', name='email', ng-model='user.email', autofocus, required)
-      .form-group
-        label(for='password') Password
-        input.form-control#password(type='password', name='password', ng-model='user.password', required, ng-minlength='3')
-      button.btn.btn-primary(ng-show='userForm.$valid', ng-click='login()') Login
-  .col-xs-9
-
+#loginbox.mainbox.col-md-6.col-md-offset-3.col-sm-8.col-sm-offset-2(style='margin-top:50px;')
+  .panel.panel-primary
+    .panel-heading
+      .panel-title Sign In
+      div(style='float:right; font-size: 80%; position: relative; top:-10px')
+        a(href='#') Forgot password?
+    .panel-body(style='padding-top:30px')
+      form.form-horizontal(novalidate, role='form', name='loginForm')
+        .input-group(style='margin-bottom: 25px')
+          span.input-group-addon
+            i.glyphicon.glyphicon-user
+          input#email.form-control(type='email', name='email', ng-model='user.email', placeholder='email')
+        .input-group(style='margin-bottom: 25px')
+          span.input-group-addon
+            i.glyphicon.glyphicon-lock
+          input#password.form-control(type='password', name='password', ng-model='user.password', placeholder='password')
+        .form-group(style='margin-top:10px')
+          .col-sm-12.controls
+            button.btn.btn-success(ng-show='loginForm.$valid', ng-click='login()') Login
+        .form-group
+          .col-md-12.control
+            div(style='border-top: 1px solid#888; padding-top:15px; font-size:85%')
+              | Don't have an account? &nbsp;
+              a(href='/#/register')
+                | Sign Up Here
