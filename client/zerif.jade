@@ -1,0 +1,1265 @@
+
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='description', content='Beautiful Responsive Animated OnePage Template')
+    meta(name='keywords', content='Zerif, responsive, html, template, creative')
+    meta(name='authors', content='Adam Barnhard, David Boling, Melanie Fryman, Logan Richardson, & Dennis Stanley')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Nashville Investor
+    
+    // FAV AND TOUCH ICONS
+    // MLF NOTE: REPLACE ICONS!!!
+    link(rel='shortcut icon', href='images/icons/favicon.ico')
+    link(rel='apple-touch-icon', href='images/icons/apple-touch-icon.png')
+    link(rel='apple-touch-icon', sizes='72x72', href='images/icons/apple-touch-icon-72x72.png')
+    link(rel='apple-touch-icon', sizes='114x114', href='images/icons/apple-touch-icon-114x114.png')
+    
+    // STYLESHEETS
+    link(rel='stylesheet', href='css/bootstrap.min.css')
+    link(rel='stylesheet', href='css/owl.theme.css')
+    link(rel='stylesheet', href='css/owl.carousel.css')
+    link(rel='stylesheet', href='css/jquery.vegas.min.css')
+    link(rel='stylesheet', href='css/animate.min.css')
+    link(rel='stylesheet', href='assets/icon-fonts/styles.css')
+    link(rel='stylesheet', href='css/pixeden-icons.css')
+
+    // CUSTOM STYLES
+    link(rel='stylesheet', href='css/styles.css')
+    link(rel='stylesheet', href='css/responsive.css')
+
+    // WEBFONT
+    link(href='http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic|Montserrat:700,400|Homemade+Apple', rel='stylesheet', type='text/css')
+        //if lt IE 9
+      script(src='js/html5shiv.js')
+      script(src='js/respond.min.js')
+
+    // jQuery
+    script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js')
+
+// *********** PRE LOADER *********** //
+.preloader
+  .status  
+
+// *********** HOME SECTION *********** //
+
+header#home.header
+  // TOP BAR
+  #main-nav.navbar.navbar-inverse.bs-docs-nav(role='banner')
+    .container
+      .navbar-header.responsive-logo
+        button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='.bs-navbar-collapse')
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        a.navbar-brand(href='./')
+          img(src='images/logo.png', alt='Zerif')
+      nav.navbar-collapse.bs-navbar-collapse.collapse(role='navigation', style='height: 1px;')
+        ul.nav.navbar-nav.navbar-right.responsive-nav.main-nav-list
+          li
+            a(href='#home') Home
+          li
+            a(href='#focus') Focus
+          li
+            a(href='#works') Works
+          li
+            a(href='#aboutus') About Us
+          li
+            a(href='#team') Team
+          li
+            a(href='#pricingtable') Pricing
+          li
+            a(href='#features') Features
+          li
+            a(href='#products') Products
+          li
+            a(href='#testimonials') Testimonials
+          li
+            a(href='#contact') Contact
+
+  // BIG HEADING WITH CALL TO ACTION BUTTONS AND SHORT MESSAGES
+  .container
+    // HEADING
+    // MLF NOTE: REPLACE TEXT!!!
+    h1.intro Affordable Quality services for Small Businesses
+    // CALL TO ACTION BUTTONS
+    .buttons
+      a.btn.btn-primary.custom-button.red-btn(href='#') Our Works
+      a.btn.btn-primary.custom-button.green-btn(href='#') Our Packages
+    // 3 SHORT MESSAGE ABOUT COMPANY
+    .row.bottom-message-section
+      .col-lg-4.col-sm-4
+        .short-text
+          i.icon.icon-fontawesome-webfont-358
+          | Fixed price for packages
+      .col-lg-4.col-sm-4
+        .short-text
+          i.icon-fontawesome-webfont-286
+          | Quality product in time
+      .col-lg-4.col-sm-4
+        .short-text
+          i.icon-fontawesome-webfont-347
+          | Satisfaction guranteed
+
+
+// *********** FOCUS SECTION *********** //
+section#focus.focus
+  div.container
+    // SECTION HEADER
+    div.section-header
+      // SECTION TITLE
+      h2.dark-text Our Focus
+      // SHORT DESCRIPTION ABOUT THE SECTION
+      h6
+        | We design & develop qaulity products to help small & medium level business.
+    // 4 FOCUS BOXES
+    div.row
+      // FIRST FOCUS BOXES
+      div.col-lg-3.col-sm-3.focus-box.red.wow.fadeInLeft.animated(data-wow-offset='30', data-wow-duration='1.5s', data-wow-delay='0.15s')
+        div.service-icon
+          i.pixeden.pd-icon-monitor
+          // FOCUS ICON
+        h5.red-border-bottom Web Design
+        // FOCUS HEADING
+        p
+          // FOCUS DESCRIPTION
+          | Created cattle form fruit. Saying from given together face without waters, whose. Second first. Face it saw give creature was thing. Over upon is brought. Him you'll above kind set
+      // / END FIRST FOCUS BOX. Other boxes has same format
+      div.col-lg-3.col-sm-3.focus-box.green.wow.fadeInLeft.animated(data-wow-offset='30', data-wow-duration='1.5s', data-wow-delay='0.15s')
+        div.service-icon
+          span.pixeden.pd-icon-camera
+        h5.green-border-bottom Photography
+        p
+          | Created cattle form fruit. Saying from given together face without waters, whose. Second first. Face it saw give creature was thing. Over upon is brought. Him you'll above kind set
+      div.col-lg-3.col-sm-3.focus-box.blue.wow.fadeInRight.animated(data-wow-offset='30', data-wow-duration='1.5s', data-wow-delay='0.15s')
+        div.service-icon
+          i.pixeden.pd-icon-email-marketing
+        h5.blue-border-bottom Email Marketing
+        p
+          | Created cattle form fruit. Saying from given together face without waters, whose. Second first. Face it saw give creature was thing. Over upon is brought. Him you'll above kind set
+      div.col-lg-3.col-sm-3.focus-box.yellow.wow.fadeInRight.animated(data-wow-offset='30', data-wow-duration='1.5s', data-wow-delay='0.15s')
+        div.service-icon
+          i.pixeden.pd-icon-check
+        h5.yellow-border-bottom SEO & SMM
+        p
+          | Created cattle form fruit. Saying from given together face without waters, whose. Second first. Face it saw give creature was thing. Over upon is brought. Him you'll above kind set
+    // OTHER FOCUSES
+    div.other-focuses
+      h5
+        span.section-footer-title ALSO WE FOCUS ON
+    // OTHER FOCUS LIST
+    div.other-focus-list.wow.fadeInUp.animated(data-wow-offset='30', data-wow-duration='1.5s', data-wow-delay='0.15s')
+      ul
+        li
+          i.icon-fontawesome-webfont-8
+          | WEB APPLICATIONS
+        li
+          i.icon-fontawesome-webfont-267
+          | SEARCH ENGINE OPTIMIZATION
+        li
+          i.icon-fontawesome-webfont-75
+          | CLOUD STORAGE
+        li
+          i.icon-fontawesome-webfont-358
+          | Project Management
+        li
+          i.icon-fontawesome-webfont-102
+          | IOS APP
+        li
+          i.icon-fontawesome-webfont-328
+          | ANDROID APP
+        li
+          i.icon-fontawesome-webfont-195
+          | WINDOWS APP
+        li
+          i.icon-fontawesome-webfont-297
+          | UX STRATEGY
+
+
+// *********** SEPARATOR SECTION *********** //
+section.separator-one
+  div.color-overlay
+    h3.container.text.wow.fadeInLeft.animated(data-wow-offset='30', data-wow-duration='1.5s', data-wow-delay='0.15s')
+      | We have 100+ happy customers in last few years. You can check what they're saying about us.
+    div.wow.fadeInRight.animated(data-wow-offset='30', data-wow-duration='1.5s', data-wow-delay='0.15s')
+      a.btn.btn-primary.custom-button.green-btn(href='') TESTIMONIALS
+
+// *********** WORKS SECTION *********** //
+section#works.works
+  div.container
+    // SECTION HEADER
+    div.section-header
+      // SECTION TITLE
+      h2.dark-text Portfolio
+      // SHORT DESCRIPTION ABOUT THE SECTION
+      h6
+        | We have designed and developed many awesome products. Just take a look.
+    div.row.projects
+      div#loader
+        div.loader-icon
+      div#portfolio-list.col-md-12
+        // PORTFOLIO ITEMS
+        ul.cbp-rfgrid
+          // PROJECT
+          li.wow.fadeInLeft.animated(data-wow-offset='30', data-wow-duration='1.5s', data-wow-delay='0.15s')
+            a.more(href='project.html')
+              img(src='images/portfolio/1.jpg', alt='project')
+              div.project-info
+                div.project-details
+                  h5.white-text.red-border-bottom
+                    | Project Title
+                  div.details.white-text
+                    | Web Design
+          // PROJECT
+          li.wow.fadeInDown.animated(data-wow-offset='30', data-wow-duration='1.5s', data-wow-delay='0.15s')
+            a.more(href='project.html')
+              img(src='images/portfolio/2.jpg', alt='project')
+              div.project-info
+                div.project-details
+                  h5.white-text.red-border-bottom
+                    | Project Title
+                  div.details.white-text
+                    | Web Design
+          // PROJECT
+          li.wow.fadeInDown.animated(data-wow-offset='30', data-wow-duration='1.5s', data-wow-delay='0.15s')
+            a.more(href='project.html')
+              img(src='images/portfolio/3.jpg', alt='project')
+              div.project-info
+                div.project-details
+                  h5.white-text.red-border-bottom
+                    | Project Title
+                  div.details.white-text
+                    | Web Design
+          // PROJECT
+          li.wow.fadeInRight.animated(data-wow-offset='30', data-wow-duration='1.5s', data-wow-delay='0.15s')
+            a.more(href='project.html')
+              img(src='images/portfolio/4.jpg', alt='project')
+              div.project-info
+                div.project-details
+                  h5.white-text.red-border-bottom
+                    | Project Title
+                  div.details.white-text
+                    | Web Design
+          // PROJECT
+          li.wow.fadeInLeft.animated(data-wow-offset='30', data-wow-duration='1.8s', data-wow-delay='0.15s')
+            a.more(href='project.html')
+              img(src='images/portfolio/5.jpg', alt='project')
+              div.project-info
+                div.project-details
+                  h5.white-text.red-border-bottom
+                    | Project Title
+                  div.details.white-text
+                    | Web Design
+          // PROJECT
+          li
+            a.more(href='project.html')
+              img(src='images/portfolio/6.jpg', alt='project')
+              div.project-info
+                div.project-details
+                  h5.white-text.red-border-bottom
+                    | Project Title
+                  div.details.white-text
+                    | Web Design
+          // PROJECT
+          li
+            a.more(href='project.html')
+              img(src='images/portfolio/7.jpg', alt='project')
+              div.project-info
+                div.project-details
+                  h5.white-text.red-border-bottom
+                    | Project Title
+                  div.details.white-text
+                    | Web Design
+          // PROJECT
+          li.wow.fadeInRight.animated(data-wow-offset='30', data-wow-duration='1.8s', data-wow-delay='0.15s')
+            a.more(href='project.html')
+              img(src='images/portfolio/8.jpg', alt='project')
+              div.project-info
+                div.project-details
+                  h5.white-text.red-border-bottom
+                    | Project Title
+                  div.details.white-text
+                    | Web Design
+          // PROJECT
+          li.wow.fadeInLeft.animated(data-wow-offset='30', data-wow-duration='2s', data-wow-delay='0.25s')
+            a.more(href='project.html')
+              img(src='images/portfolio/9.jpg', alt='project')
+              div.project-info
+                div.project-details
+                  h5.white-text.red-border-bottom
+                    | Project Title
+                  div.details.white-text
+                    | Web Design
+          // PROJECT
+          li.wow.fadeInUp.animated(data-wow-offset='30', data-wow-duration='2s', data-wow-delay='0.25s')
+            a.more(href='project.html')
+              img(src='images/portfolio/10.jpg', alt='project')
+              div.project-info
+                div.project-details
+                  h5.white-text.red-border-bottom
+                    | Project Title
+                  div.details.white-text
+                    | Web Design
+          // PROJECT
+          li.wow.fadeInUp.animated(data-wow-offset='30', data-wow-duration='2s', data-wow-delay='0.25s')
+            a.more(href='project.html')
+              img(src='images/portfolio/11.jpg', alt='project')
+              div.project-info
+                div.project-details
+                  h5.white-text.red-border-bottom
+                    | Project Title
+                  div.details.white-text
+                    | Web Design
+          // PROJECT
+          li.wow.fadeInRight.animated(data-wow-offset='30', data-wow-duration='2s', data-wow-delay='0.25s')
+            a.more(href='project.html')
+              img(src='images/portfolio/12.jpg', alt='project')
+              div.project-info
+                div.project-details
+                  h5.white-text.red-border-bottom
+                    | Project Title
+                  div.details.white-text
+                    | Web Design
+    // PROJECT DETAILS WILL BE LOADED HERE
+    div#loaded-content
+    a#back-button.red-btn(href='#')
+      i.icon-fontawesome-webfont-27
+      | Go Back
+
+// *********** ABOUT US SECTION *********** //
+section#aboutus.about-us
+  .container
+    // SECTION HEADER
+    .section-header
+      // SECTION TITLE
+      h2.white-text About US
+      // SHORT DESCRIPTION ABOUT THE SECTION
+      h6.white-text
+        | We design & develop quality products to help small & medium level business.
+    // 3 COLUMNS OF ABOUT US
+    .row
+      // COLUMN 1 - BIG MESSAGE ABOUT THE COMPANY
+      .col-lg-4.col-md-4.column
+        .big-intro.wow.fadeInLeft.animated(data-wow-offset='30', data-wow-duration='1.5s', data-wow-delay='0.15s')
+          | Developing Amazing Things with Passion since 2002.
+      // COLUMN 2 - BRIEF ABOUT THE COMPANY
+      .col-lg-4.col-md-4.column
+        p.wow.fadeInUp.animated(data-wow-offset='30', data-wow-duration='1.5s', data-wow-delay='0.15s')
+          | Created forth two. Behold appear first, kind all i saying fowl man itself moved which every open shall moved subdue appear. Saying life wherein stars. Give dry, own, male had that us third lesser over deep. May every bring in it Whose. Female earth heaven won't behold female.
+          br
+          br
+          | Moved bearing give a two after. Had. Seas. Man they're. Grass above kind saying thing for that void sixth fly His after it.
+          br
+          br
+          | The set doesn't moved. Deep don't fruit fowl gathering heaven days moving creeping under from i air. Set it fifth Meat was darkness. every bring in it Whose. Female earth heaven won't behold female.
+      // COLUMN 1 - SKILSS
+      .col-lg-4.col-md-4.column
+        ul.skills.wow.fadeInRight.animated(data-wow-offset='30', data-wow-duration='1.5s', data-wow-delay='0.15s')
+          // SKILL ONE
+          li.skill
+            .skill-count
+              input.skill1(type='text', value='86', data-thickness='.2')
+            h6 Web Design
+            p
+              | We are expert on HTML development. Clean, semantic and valid HTML codes.
+          // SKILL TWO
+          li.skill
+            .skill-count
+              input.skill2(type='text', value='80', data-thickness='.2')
+            h6 development
+            p
+              | We are expert on HTML development. Clean, semantic and valid HTML codes.
+          // SKILL THREE
+          li.skill
+            .skill-count
+              input.skill3(type='text', value='89', data-thickness='.2')
+            h6 photography
+            p
+              | We are expert on HTML development. Clean, semantic and valid HTML codes.
+          // SKILL FOUR
+          li.skill
+            .skill-count
+              input.skill4(type='text', value='95', data-thickness='.2')
+            h6 SEO
+            p
+              | We are expert on HTML development. Clean, semantic and valid HTML codes.
+
+
+    // CLIENTS
+    .our-clients
+      h5
+        span.section-footer-title OUR HAPPY CLIENTS
+    // CLIENT LIST
+    .client-list
+      ul.wow.fadeInRight.animated(data-wow-offset='30', data-wow-duration='1.5s', data-wow-delay='0.15s')
+        li
+          a(href='#')
+            img(src='images/clients/1.png', alt='Client 1')
+        li
+          a(href='#')
+            img(src='images/clients/2.png', alt='Client 2')
+        li
+          a(href='#')
+            img(src='images/clients/3.png', alt='Client 3')
+        li
+          a(href='#')
+            img(src='images/clients/1.png', alt='Client 1')
+        li
+          a(href='#')
+            img(src='images/clients/4.png', alt='Client 4')
+        li
+          a(href='#')
+            img(src='images/clients/5.png', alt='Client 5')
+        li
+          a(href='#')
+            img(src='images/clients/6.png', alt='Client 6')
+
+
+// *********** STATS *********** //
+section.stats
+  div.container
+    // STATS
+    div.row
+      // START COLUMN
+      div.col-lg-3.col-sm-3
+        div.stat.wow.fadeInUp.animated(data-wow-offset='30', data-wow-duration='1.5s', data-wow-delay='0.15s')
+          div.icon-top.red-text
+            i.icon-design-graphic-tablet-streamline-tablet
+          div.stat-text
+            h3.white-text.red-border-bottom 1,236
+            h6 Projects Completed
+      // START COLUMN
+      div.col-lg-3.col-sm-3
+        div.stat.wow.fadeInUp.animated(data-wow-offset='30', data-wow-duration='1.75s', data-wow-delay='0.30s')
+          div.icon-top.green-text
+            i.icon-man-people-streamline-user
+          div.stat-text
+            h3.white-text.green-border-bottom 196
+            h6 Happy Clients
+      // START COLUMN
+      div.col-lg-3.col-sm-3
+        div.stat.wow.fadeInUp.animated(data-wow-offset='30', data-wow-duration='2s', data-wow-delay='0.45s')
+          div.icon-top.blue-text
+            i.icon-email-mail-streamline
+          div.stat-text
+            h3.white-text.blue-border-bottom 56,236
+            h6 Mail Conversation
+      // START COLUMN
+      div.col-lg-3.col-sm-3
+        div.stat.wow.fadeInUp.animated(data-wow-offset='30', data-wow-duration='2.25s', data-wow-delay='1s')
+          div.icon-top.yellow-text
+            i.icon-picture-streamline-1
+          div.stat-text
+            h3.white-text.yellow-border-bottom 2,519
+            h6 Photos Taken
+
+
+// *********** TEAM SECTION *********** //
+section#team.our-team
+  .container
+    // SECTION HEADER
+    .section-header
+      // SECTION TITLE
+      h2.dark-text Our Team
+      // SHORT DESCRIPTION ABOUT THE SECTION
+      h6
+        | Check our awesome team memebers who always work hard to provide quality products.
+    // TEAM MEMBERS
+    .row.wow.fadeInRight.animated(data-wow-offset='40', data-wow-duration='3s', data-wow-delay='0.15s')
+      // MEMBER
+      .col-lg-3.col-sm-3
+        .team-member
+          figure.profile-pic
+            img(src='images/team/pic1.jpg', alt='')
+            // MEMBER PROFILE PIC
+          .member-details
+            h5.dark-text.red-border-bottom Jason Daniels
+            .position
+              | Founder
+          .social-icons
+            ul
+              li
+                a(href='')
+                  i.icon-facebook
+              li
+                a(href='')
+                  i.icon-twitter-alt
+              li
+                a(href='')
+                  i.icon-behance
+              li
+                a(href='')
+                  i.icon-dribbble
+          .details
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium sapiente voluptate nostrum ipsa tempora optio facilis beatae quo aut error corrupti officiis dolore accusantium rem rerum illum nulla sed quisquam.
+      // / END MEMBER
+      .col-lg-3.col-sm-3
+        .team-member
+          figure.profile-pic
+            img(src='images/team/pic2.jpg', alt='')
+          .member-details
+            h5.dark-text.green-border-bottom Patricia Medina
+            .position
+              | Senior Desigener
+          .social-icons
+            ul
+              li
+                a(href='')
+                  i.icon-facebook
+              li
+                a(href='')
+                  i.icon-twitter-alt
+              li
+                a(href='')
+                  i.icon-behance
+              li
+                a(href='')
+                  i.icon-linkedin
+          .details
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium sapiente voluptate nostrum ipsa tempora optio facilis beatae quo aut error corrupti officiis dolore accusantium rem rerum illum nulla sed quisquam.
+      .col-lg-3.col-sm-3
+        .team-member
+          figure.profile-pic
+            img(src='images/team/pic3.jpg', alt='')
+          .member-details
+            h5.dark-text.blue-border-bottom Eugene Lane
+            .position
+              | Lead Developer
+          .social-icons
+            ul
+              li
+                a(href='')
+                  i.icon-facebook
+              li
+                a(href='')
+                  i.icon-twitter-alt
+              li
+                a(href='')
+                  i.icon-behance
+              li
+                a(href='')
+                  i.icon-linkedin
+          .details
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium sapiente voluptate nostrum ipsa tempora optio facilis beatae quo aut error corrupti officiis dolore accusantium rem rerum illum nulla sed quisquam.
+      .col-lg-3.col-sm-3
+        .team-member
+          figure.profile-pic
+            img(src='images/team/pic4.jpg', alt='')
+          .member-details
+            h5.dark-text.yellow-border-bottom Kathy Hudson
+            .position
+              | Art Director
+          .social-icons
+            ul
+              li
+                a(href='')
+                  i.icon-facebook
+              li
+                a(href='')
+                  i.icon-twitter-alt
+              li
+                a(href='')
+                  i.icon-behance
+              li
+                a(href='')
+                  i.icon-linkedin
+          .details
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium sapiente voluptate nostrum ipsa tempora optio facilis beatae quo aut error corrupti officiis dolore accusantium rem rerum illum nulla sed quisquam.
+      .col-lg-3.col-sm-3
+        .team-member
+          figure.profile-pic
+            img(src='images/team/pic5.jpg', alt='')
+          .member-details
+            h5.dark-text.red-border-bottom Vincent Mccoy
+            .position
+              | Project Manager
+          .social-icons
+            ul
+              li
+                a(href='')
+                  i.icon-facebook
+              li
+                a(href='')
+                  i.icon-twitter-alt
+              li
+                a(href='')
+                  i.icon-behance
+              li
+                a(href='')
+                  i.icon-dribbble
+          .details
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium sapiente voluptate nostrum ipsa tempora optio facilis beatae quo aut error corrupti officiis dolore accusantium rem rerum illum nulla sed quisquam.
+      .col-lg-3.col-sm-3
+        .team-member
+          figure.profile-pic
+            img(src='images/team/pic6.jpg', alt='')
+          .member-details
+            h5.dark-text.green-border-bottom Gary Morrison
+            .position
+              | Photographer
+          .social-icons
+            ul
+              li
+                a(href='')
+                  i.icon-facebook
+              li
+                a(href='')
+                  i.icon-twitter-alt
+              li
+                a(href='')
+                  i.icon-behance
+              li
+                a(href='')
+                  i.icon-linkedin
+          .details
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium sapiente voluptate nostrum ipsa tempora optio facilis beatae quo aut error corrupti officiis dolore accusantium rem rerum illum nulla sed quisquam.
+      .col-lg-3.col-sm-3
+        .team-member
+          figure.profile-pic
+            img(src='images/team/pic7.jpg', alt='')
+          .member-details
+            h5.dark-text.blue-border-bottom Patrick Sanchez
+            .position
+              | Business Development
+          .social-icons
+            ul
+              li
+                a(href='')
+                  i.icon-facebook
+              li
+                a(href='')
+                  i.icon-twitter-alt
+              li
+                a(href='')
+                  i.icon-behance
+              li
+                a(href='')
+                  i.icon-linkedin
+          .details
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium sapiente voluptate nostrum ipsa tempora optio facilis beatae quo aut error corrupti officiis dolore accusantium rem rerum illum nulla sed quisquam.
+      .col-lg-3.col-sm-3
+        .team-member
+          figure.profile-pic
+            img(src='images/team/pic8.jpg', alt='')
+          .member-details
+            h5.dark-text.yellow-border-bottom Rachel Rogers
+            .position
+              | Account Manager
+          .social-icons
+            ul
+              li
+                a(href='')
+                  i.icon-facebook
+              li
+                a(href='')
+                  i.icon-twitter-alt
+              li
+                a(href='')
+                  i.icon-behance
+              li
+                a(href='')
+                  i.icon-linkedin
+          .details
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium sapiente voluptate nostrum ipsa tempora optio facilis beatae quo aut error corrupti officiis dolore accusantium rem rerum illum nulla sed quisquam.
+
+
+// *********** PACKAGES SECTION *********** //
+section#pricingtable.packages
+  div.container
+    // SECTION HEADER
+    div.section-header
+      // SECTION TITLE
+      h2.white-text Packages
+      // SHORT DESCRIPTION ABOUT THE SECTION
+      h6.white-text
+        | We have 4 friendly packages for you. Check all the packages and choose the right one for you.
+    // PACKAGES
+    div.row
+      // FIRST PACKAGE
+      div.col-lg-3.col-sm-3
+        div.package.wow.fadeInLeft.animated(data-wow-offset='30', data-wow-duration='1.5s', data-wow-delay='0.15s')
+          div.package-header.green-bg
+            h5 Basic
+          div.price.dark-bg
+            div.price-container
+              h4
+                span.dollar-sign $
+                | 15
+              span.price-meta
+                | / mo
+          ul
+            li
+              i.icon-check
+              | 100GB Storage
+            li
+              i.icon-check
+              | All Themes
+            li
+              i.icon-cancel
+              | Access to Tutorials
+            li
+              i.icon-cancel
+              | Auto Backup
+            li
+              i.icon-cancel
+              | Extended Security
+          a.btn.btn-primary.custom-button.green-btn(href='#')
+            | Sign Up
+      // / END FIRST PACKAGE
+      div.col-lg-3.col-sm-3
+        div.package.wow.fadeInLeft.animated(data-wow-offset='30', data-wow-duration='1.5s', data-wow-delay='0.15s')
+          div.package-header.blue-bg
+            h5 Standard
+          div.price.dark-bg
+            div.price-container
+              h4
+                span.dollar-sign $
+                | 21
+              span.price-meta / Mo
+          ul
+            li
+              i.icon-check
+              | 100GB Storage
+            li
+              i.icon-check
+              | All Themes
+            li
+              i.icon-cancel
+              | Access to Tutorials
+            li
+              i.icon-cancel
+              | Auto Backup
+            li
+              i.icon-cancel
+              | Extended Security
+          a.btn.btn-primary.custom-button.blue-btn(href='#')
+            | Sign Up
+      div.col-lg-3.col-sm-3
+        div.best-value
+          div.package.wow.fadeInUp.animated(data-wow-offset='30', data-wow-duration='1.5s', data-wow-delay='0.15s')
+            div.package-header.red-bg
+              h4 Premium
+              div.meta-text
+                | Best Value
+            div.price.dark-bg
+              h4
+                span.dollar-sign $
+                | 53
+              span.price-meta / mo
+            ul
+              li
+                i.icon-check
+                | 100GB Storage
+              li
+                i.icon-check
+                | All Themes
+              li
+                i.icon-cancel
+                | Access to Tutorials
+              li
+                i.icon-cancel
+                | Auto Backup
+              li
+                i.icon-cancel
+                | Extended Security
+            a.btn.btn-primary.custom-button.red-btn(href='#')
+              | Sign Up
+      div.col-lg-3.col-sm-3
+        div.package.wow.fadeInRight.animated(data-wow-offset='30', data-wow-duration='1.5s', data-wow-delay='0.15s')
+          div.package-header.yellow-bg
+            h5 Ultimate
+          div.price.dark-bg
+            h4
+              span.dollar-sign $
+              | 99
+            span.price-meta / mo
+          ul
+            li
+              i.icon-check
+              | 100GB Storage
+            li
+              i.icon-check
+              | All Themes
+            li
+              i.icon-cancel
+              | Access to Tutorials
+            li
+              i.icon-cancel
+              | Auto Backup
+            li
+              i.icon-cancel
+              | Extended Security
+          a.btn.btn-primary.custom-button.yellow-btn(href='#')
+            | Sign Up
+
+
+// *********** FEATURES SECTION *********** //
+section#features.features
+  div.container
+    // SECTION HEADER
+    div.section-header
+      // SECTION TITLE
+      h2.dark-text Features
+      // SHORT DESCRIPTION ABOUT THE SECTION
+      h6
+        | We design & develop qaulity products to help small & medium level business.
+    // FEATURES
+    div.row
+      // FEATURES COLUMN LEFT
+      div.col-md-6.col-sm-6.wow.fadeInLeft.animated(data-wow-offset='30', data-wow-duration='1.5s', data-wow-delay='0.15s')
+        // FEATURE
+        div.feature
+          div.feature-icon
+            i.icon-heart-1
+          h5 Design with Love
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        // FEATURE
+        div.feature
+          div.feature-icon
+            i.icon-bulb
+          h5 Creative Features
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        // FEATURE
+        div.feature
+          div.feature-icon
+            i.icon-settings-1
+          h5 Thousands of Options
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      // FEATURES COLUMN RIGHT
+      div.col-md-6.col-sm-6.wow.fadeInRight.animated(data-wow-offset='30', data-wow-duration='1.5s', data-wow-delay='0.15s')
+        // FEATURE
+        div.feature
+          div.feature-icon
+            i.icon-params
+          h5 Easy to Customize
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        // FEATURE
+        div.feature
+          div.feature-icon
+            i.icon-handle-streamline-vector
+          h5 Clean Strategy
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        // FEATURE
+        div.feature
+          div.feature-icon
+            i.icon-speech-streamline-talk-user
+          h5 Awesome Support
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+
+// *********** PRODUCTS SECTION *********** //
+section#products.products(data-type='background', data-speed='1')
+  div.color-overlay
+    div.container
+      // SECTION HEADER
+      div.section-header
+        // SECTION TITLE
+        h2.white-text Products
+        // SHORT DESCRIPTION ABOUT THE SECTION
+        h6.white-text
+          | We design & develop qaulity products to help small & medium level business.
+      // END SECTION HEADER
+      // PRODUCTS
+      div.row.wow.fadeInLeft.animated(data-wow-offset='30', data-wow-duration='1.5s', data-wow-delay='0.15s')
+        // SINGLE PRODUCT
+        div.col-md-3
+          div.item.item-1
+            div.item-overlay
+            div.item-content
+              div.item-top-content
+                div.item-top-content-inner
+                  div.item-product
+                    div.item-top-title
+                      h5 One Light
+                      // PRODUCT TITLE
+                      p.subdescription
+                        | WordPress Theme
+                      // PRODUCT DESCRIPTION
+                  div.item-product-price
+                    // PRICE
+                    span.price-num.green-text $17
+                    // OLD PRICE START
+                    p.subdescription
+                      | $36
+                    div.old-price
+                    // END OLD PRICE
+              // ITEM HOVER CONTENT
+              div.item-add-content
+                div.item-add-content-inner
+                  div.section
+                    p
+                      | Creative WordPress Theme
+                  div.section
+                    a.btn.btn-primary.custom-button.red-btn(href='#') Demo
+                    br
+                    a.btn.btn-primary.custom-button.green-btn(href='#') Buy
+        // END FIRST ITEM
+        div.col-md-3
+          div.item.item-2
+            div.item-overlay
+            div.item-content
+              div.item-top-content
+                div.item-top-content-inner
+                  div.item-product
+                    div.item-top-title
+                      h5 Telfez
+                      p.subdescription
+                        | WordPress Theme
+                  div.item-product-price
+                    span.price-num.green-text $17
+                    p.subdescription
+                      | $36
+                    div.old-price
+              div.item-add-content
+                div.item-add-content-inner
+                  div.section
+                    p
+                      | Creative WordPress Theme
+                  div.section
+                    a.btn.btn-primary.custom-button.red-btn(href='#') Demo
+                    br
+                    a.btn.btn-primary.custom-button.green-btn(href='#') Buy
+        div.col-md-3
+          div.item.item-3
+            div.item-overlay
+            div.item-content
+              div.item-top-content
+                div.item-top-content-inner
+                  div.item-product
+                    div.item-top-title
+                      h5 Calender
+                      p.subdescription
+                        | Widget
+                  div.item-product-price
+                    span.price-num.green-text $9
+                    p.subdescription
+                      | $15
+                    div.old-price
+              div.item-add-content
+                div.item-add-content-inner
+                  div.section
+                    p
+                      | Beautiful Calender Widget
+                  div.section
+                    a.btn.btn-primary.custom-button.red-btn(href='#') Demo
+                    br
+                    a.btn.btn-primary.custom-button.green-btn(href='#') Buy
+        div.col-md-3
+          div.item.item-4
+            div.item-overlay
+            div.item-content
+              div.item-top-content
+                div.item-top-content-inner
+                  div.item-product
+                    div.item-top-title
+                      h5 Toolbar
+                      p.subdescription
+                        | UI Element
+                  div.item-product-price
+                    span.price-num.green-text $11
+              div.item-add-content
+                div.item-add-content-inner
+                  div.section
+                    p
+                      | Beautiful Toolbar with Icons
+                  div.section
+                    a.btn.btn-primary.custom-button.red-btn(href='#') Demo
+                    br
+                    a.btn.btn-primary.custom-button.green-btn(href='#') Buy
+      // END FIRST ROW
+      div.row.wow.fadeInRight.animated(data-wow-offset='30', data-wow-duration='1.5s', data-wow-delay='0.15s')
+        div.col-md-3
+          div.item.item-5
+            div.item-overlay
+            div.item-content
+              div.item-top-content
+                div.item-top-content-inner
+                  div.item-product
+                    div.item-top-title
+                      h5 Public Radio
+                      p.subdescription
+                        | UI Element
+                  div.item-product-price
+                    span.price-num.green-text $15
+                    p.subdescription
+                      | $23
+                    div.old-price
+              div.item-add-content
+                div.item-add-content-inner
+                  div.section
+                    p
+                      | Creative Radio PSD
+                  div.section
+                    a.btn.btn-primary.custom-button.red-btn(href='#') Demo
+                    br
+                    a.btn.btn-primary.custom-button.green-btn(href='#') Buy
+        div.col-md-3
+          div.item.item-6
+            div.item-overlay
+            div.item-content
+              div.item-top-content
+                div.item-top-content-inner
+                  div.item-product
+                    div.item-top-title
+                      h5 Health Care
+                      p.subdescription
+                        | One Page Template
+                  div.item-product-price
+                    span.price-num.green-text $18
+                    p.subdescription
+                      | $30
+                    div.old-price
+              div.item-add-content
+                div.item-add-content-inner
+                  div.section
+                    p
+                      | Responsive One Page Template
+                  div.section
+                    a.btn.btn-primary.custom-button.red-btn(href='#') Demo
+                    br
+                    a.btn.btn-primary.custom-button.green-btn(href='#') Buy
+        div.col-md-3
+          div.item.item-7
+            div.item-overlay
+            div.item-content
+              div.item-top-content
+                div.item-top-content-inner
+                  div.item-product
+                    div.item-top-title
+                      h5 Radio Dial
+                      p.subdescription
+                        | UI Element
+                  div.item-product-price
+                    span.price-num.green-text $10
+              div.item-add-content
+                div.item-add-content-inner
+                  div.section
+                    p
+                      | Creative WordPress Theme
+                  div.section
+                    a.btn.btn-primary.custom-button.red-btn(href='#') Demo
+                    br
+                    a.btn.btn-primary.custom-button.green-btn(href='#') Buy
+        div.col-md-3
+          div.item.item-8
+            div.item-overlay
+            div.item-content
+              div.item-top-content
+                div.item-top-content-inner
+                  div.item-product
+                    div.item-top-title
+                      h5 Pricing Page
+                      p.subdescription
+                        | UI Element
+                  div.item-product-price
+                    span.price-num.green-text $17
+                    p.subdescription
+                      | $36
+                    div.old-price
+              div.item-add-content
+                div.item-add-content-inner
+                  div.section
+                    p
+                      | Creative UI Element
+                  div.section
+                    a.btn.btn-primary.custom-button.red-btn(href='#') Demo
+                    br
+                    a.btn.btn-primary.custom-button.green-btn(href='#') Buy
+
+
+// *********** NEWSLETTER *********** //
+section.newsletter
+  .container
+    h3.white-text.wow.fadeInLeft.animated(data-wow-offset='30', data-wow-duration='1.5s', data-wow-delay='0.15s') Stay in touch
+    // NEWSLETTER SECTION HEADING
+    .sub-heading.white-text.wow.fadeInRight.animated(data-wow-offset='30', data-wow-duration='1.5s', data-wow-delay='0.15s')
+      | Sign Up for Email Updates on on News & Offers
+    // SUBSCRIPTION FORM
+    form.subscription.wow.fadeInLeft.animated(action='#', data-wow-offset='30', data-wow-duration='1.5s', data-wow-delay='0.15s', role='form')
+      input.form-control.input-box(type='email', placeholder='Enter email')
+      button.btn.btn-primary.custom-button.red-btn Sign Up
+
+
+// *********** TESTIMONIAL *********** //
+section#testimonials.testimonial
+  .container
+    // SECTION HEADER
+    .section-header
+      // SECTION TITLE
+      h2.white-text Testimonials
+      // SHORT DESCRIPTION ABOUT THE SECTION
+      h6.white-text
+        | We have worked with hundreds of clients. Check what our awesome happy clients saying about us.
+    // / END SECTION HEADER
+    // CLIENT FEEDBACKS
+    .row.wow.fadeInRight.animated(data-wow-offset='30', data-wow-duration='1.5s', data-wow-delay='0.15s')
+      .col-md-12
+        #client-feedbacks.owl-carousel.owl-theme
+          // SINGLE FEEDBACK BOX
+          .feedback-box
+            // MESSAGE OF THE CLIENT
+            .message
+              | “Called days. Image kind beginning have. Herb set kind herb. Wherein saying third was, every land moveth also bearing hath bring had give god gathered behold open cattle after a, from third male subdue multiply divided void cattle winged. Herb set kind herb. multiply divided void cattle winged. Herb set kind herb.”
+            // CLIENT INFORMATION
+            .client
+              .quote.red-text
+                i.icon-fontawesome-webfont-294
+              .client-info
+                a.client-name(href='') Frank Willian
+                .client-company
+                  | CEO, AbcD Network
+              .client-image.hidden-xs
+                img(src='images/clients-pic/1.jpg', alt='')
+            // / END CLIENT INFORMATION
+          // / END SINGLE FEEDBACK BOX
+          .feedback-box
+            .message
+              | “Called days. Image kind beginning have. Herb set kind herb. Wherein saying third was, every land moveth also bearing hath bring had give god gathered behold open cattle after a, from third male subdue multiply divided void cattle winged. Herb set kind herb. multiply divided void cattle winged. Herb set kind herb.”
+            .client
+              .quote.green-text
+                i.icon-fontawesome-webfont-294
+              .client-info
+                a.client-name(href='') David Clyne
+                .client-company
+                  | CEO, Zyxw
+              .client-image.hidden-xs
+                img(src='images/clients-pic/2.jpg', alt='')
+          .feedback-box
+            .message
+              | “Called days. Image kind beginning have. Herb set kind herb. Wherein saying third was, every land moveth also bearing hath bring had give god gathered behold open cattle after a, from third male subdue multiply divided void cattle winged. Herb set kind herb. multiply divided void cattle winged. Herb set kind herb.”
+            .client
+              .quote.blue-text
+                i.icon-fontawesome-webfont-294
+              .client-info
+                a.client-name(href='') Keith McCarthy
+                .client-company
+                  | Manager, XYZ Inc.
+              .client-image.hidden-xs
+                img(src='images/clients-pic/3.jpg', alt='')
+          .feedback-box
+            .message
+              | “Called days. Image kind beginning have. Herb set kind herb. Wherein saying third was, every land moveth also bearing hath bring had give god gathered behold open cattle after a, from third male subdue multiply divided void cattle winged. Herb set kind herb. multiply divided void cattle winged. Herb set kind herb.”
+            .client
+              .quote.red-text
+                i.icon-fontawesome-webfont-294
+              .client-info
+                a.client-name(href='') Frank Willian
+                .client-company
+                  | CEO, AbcD Network
+              .client-image.hidden-xs
+                img(src='images/clients-pic/2.jpg', alt='')
+          .feedback-box
+            .message
+              | “Called days. Image kind beginning have. Herb set kind herb. Wherein saying third was, every land moveth also bearing hath bring had give god gathered behold open cattle after a, from third male subdue multiply divided void cattle winged. Herb set kind herb. multiply divided void cattle winged. Herb set kind herb.”
+            .client
+              .quote.green-text
+                i.icon-fontawesome-webfont-294
+              .client-info
+                a.client-name(href='') David Clyne
+                .client-company
+                  | CEO, Zyxw
+              .client-image.hidden-xs
+                img(src='images/clients-pic/3.jpg', alt='')
+          .feedback-box
+            .message
+              | “Called days. Image kind beginning have. Herb set kind herb. Wherein saying third was, every land moveth also bearing hath bring had give god gathered behold open cattle after a, from third male subdue multiply divided void cattle winged. Herb set kind herb. multiply divided void cattle winged. Herb set kind herb.”
+            .client
+              .quote.blue-text
+                i.icon-fontawesome-webfont-294
+              .client-info
+                a.client-name(href='') Keith McCarthy
+                .client-company
+                  | Manager, XYZ Inc.
+              .client-image.hidden-xs
+                img(src='images/clients-pic/1.jpg', alt='')
+
+
+// *********** CONTACT US SECTION *********** //
+section#contact.contact-us
+  .container
+    // SECTION HEADER
+    .section-header
+      // SECTION TITLE
+      h2.white-text Get in touch
+      // SHORT DESCRIPTION ABOUT THE SECTION
+      h6.white-text
+        | Have any question? Drop us a message. We will get back to you in 24 hours.
+    // / END SECTION HEADER
+    // CONTACT FORM
+    .row
+      form.contact-form(role='form', action='#')
+        .wow.fadeInLeft.animated(data-wow-offset='30', data-wow-duration='1.5s', data-wow-delay='0.15s')
+          .col-lg-4.col-sm-4
+            input.form-control.input-box(type='text', name='name', placeholder='Your Name')
+          .col-lg-4.col-sm-4
+            input.form-control.input-box(type='email', name='email', placeholder='Your Email')
+          .col-lg-4.col-sm-4
+            input.form-control.input-box(type='text', name='subject', placeholder='Subject')
+        .col-md-12.wow.fadeInRight.animated(data-wow-offset='30', data-wow-duration='1.5s', data-wow-delay='0.15s')
+          textarea.form-control.textarea-box(name='message', placeholder='Your Message')
+        button.btn.btn-primary.custom-button.red-btn.wow.fadeInLeft.animated(data-wow-offset='30', data-wow-duration='1.5s', data-wow-delay='0.15s', type='submit') Send Message
+
+
+// *********** FOOTER SECTION *********** //
+footer
+  .container
+    // COMPANY ADDRESS
+    .col-md-5.company-details
+      .icon-top.red-text
+        i.icon-fontawesome-webfont-302
+      | 415 Church Street, Nashville, TN 37219
+    // COMPANY EMAIL
+    .col-md-2.company-details
+      .icon-top.green-text
+        i.icon-fontawesome-webfont-329
+      | contact@teamvoltron.com
+    // COMPANY PHONE NUMBER
+    .col-md-2.company-details
+      .icon-top.blue-text
+        i.icon-fontawesome-webfont-101
+      | (555) 555-5555
+    // SOCIAL ICON AND COPYRIGHT
+    .col-lg-3.col-sm-3.copyright
+      ul.social
+        li
+          a(href='')
+            i.icon-facebook
+        li
+          a(href='')
+            i.icon-twitter-alt
+        li
+          a(href='')
+            i.icon-linkedin
+        li
+          a(href='')
+            i.icon-behance
+        li
+          a(href='')
+            i.icon-dribbble
+      | ©2014 Team Voltron 2.0
+
+// *********** SCRIPTS *********** //
+script(src='js/bootstrap.min.js')
+script(src='js/jquery.scrollTo.min.js')
+script(src='js/wow.min.js')
+script(src='js/jquery.nav.js')
+script(src='js/jquery.knob.js')
+script(src='js/owl.carousel.min.js')
+script(src='js/smoothscroll.js')
+script(src='js/jquery.vegas.min.js')
+script(src='js/zerif.js')
