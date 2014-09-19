@@ -8,3 +8,4 @@ Object.defineProperty(Com, 'collection', {
 });
 
 module.exports = Com;
+

@@ -23,7 +23,6 @@ DevApp.findAllWithin10Miles = function(latLng, cb){
 
 };
 
-
 module.exports = DevApp;
 
 // HELPER FUNCTIONS
@@ -46,3 +45,4 @@ function massageData(data){
 
   return obj;
 }
+

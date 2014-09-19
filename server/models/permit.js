@@ -26,7 +26,6 @@ Permit.findAllWithin2Miles = function(latLng, cb){
 
 };
 
-
 module.exports = Permit;
 
 // HELPER FUNCTIONS
@@ -107,3 +106,4 @@ function getIconOrColor(type, permit){
     }
   }
 }
+

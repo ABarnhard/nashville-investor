@@ -8,9 +8,9 @@ html(ng-app='prop', lang='en')
     title Nashville Investor
 
     // STYLESHEETS
-    link(href='/vendor/bootstrap/dist/css/bootstrap.css', rel='stylesheet')
-    link(href='/vendor/fontawesome/css/font-awesome.css', rel='stylesheet')
-    link(href='/vendor/toastr/toastr.css', rel='stylesheet')
+    link(rel='stylesheet', href='/vendor/bootstrap/dist/css/bootstrap.css')
+    link(rel='stylesheet', href='/vendor/fontawesome/css/font-awesome.css')
+    link(rel='stylesheet', href='/vendor/toastr/toastr.css')
     // FAV AND TOUCH ICONS
     // MLF NOTE: REPLACE ICONS!!!
     link(rel='shortcut icon', href='assets/images/icons/favicon.ico')
@@ -18,22 +18,21 @@ html(ng-app='prop', lang='en')
     link(rel='apple-touch-icon', sizes='72x72', href='assets/images/icons/apple-touch-icon-72x72.png')
     link(rel='apple-touch-icon', sizes='114x114', href='assets/images/icons/apple-touch-icon-114x114.png')
     // ZERIF STYLES
-    link(rel='stylesheet', href='assets/icon-fonts/styles.css')
+    link(rel='stylesheet', href='vendor/zerif/assets/icon-fonts/styles.css')
     link(rel='stylesheet', href='vendor/zerif/css/bootstrap.min.css')
     link(rel='stylesheet', href='vendor/zerif/css/owl.theme.css')
     link(rel='stylesheet', href='vendor/zerif/css/owl.carousel.css')
     link(rel='stylesheet', href='vendor/zerif/css/jquery.vegas.min.css')
     link(rel='stylesheet', href='vendor/zerif/css/animate.min.css')
     link(rel='stylesheet', href='vendor/zerif/css/pixeden-icons.css')
+    link(rel='stylesheet', href='vendor/zerif/css/responsive.css')
     // CUSTOM STYLES
     link(rel='stylesheet', href='/index.css')
-    link(rel='stylesheet', href='/views/home/home.css')
-    // ZERIF CUSTOM STYLES
     link(rel='stylesheet', href='/zerif.css')
-    link(rel='stylesheet', href='vendor/zerif/css/responsive.css')
+    link(rel='stylesheet', href='/views/home/home.css')
     // WEBFONT
-    link(href='http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic|Montserrat:700,400|Homemade+Apple', rel='stylesheet', type='text/css')
-    //if lt IE 9
+    link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic|Montserrat:700,400|Homemade+Apple', type='text/css')
+    //if IE version < 9, run these scripts
     script(src='vendor/zerif/js/html5shiv.js')
     script(src='vendor/zerif/js/respond.min.js')
 
@@ -70,11 +69,12 @@ html(ng-app='prop', lang='en')
     script(src='vendor/zerif/js/owl.carousel.min.js')
     script(src='vendor/zerif/js/smoothscroll.js')
     script(src='vendor/zerif/js/jquery.vegas.min.js')
-    script(src='vendor/zerif/js/zerif.js')
     // CUSTOM SCRIPTS
     script(src='/config/toastr.js')
     script(src='/index.js')
     script(src='/nav.js')
+    script(src='/zerif.js')
+    // script(src='/zerif.js')
     // CONTROLLERS
     script(src='/views/home/home.js')
     script(src='/views/value/value.js')

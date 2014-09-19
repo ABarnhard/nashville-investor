@@ -39,6 +39,5 @@ Value.getData = function(query, cb){
   });
 };
 
-
-
 module.exports = Value;
+
