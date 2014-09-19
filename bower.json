@@ -1,11 +1,15 @@
 {
-  "name": "mean-template",
+  "name": "nashville-investor",
   "version": "0.0.0",
-  "homepage": "https://github.com/nss-cohort-2014-06-07/mean-template",
+  "homepage": "https://github.com/mlfryman/nashville-investor",
   "authors": [
-    "Chyld Medford <chyld.medford@gmail.com>"
+    "Adam Barnhard <admbarn@gmail.com>",
+    "David Boling <daviddboling@gmail.com>",
+    "Melanie Fryman <melanie@frymanet.com>",
+    "Logan Richardson <g.logan.richardson@gmail.com>",
+    "Dennis Stanley <stanleytd@gmail.com>"
   ],
-  "description": "The MEAN Template",
+  "description": "Nashville Investor",
   "license": "MIT",
   "dependencies": {
     "angular": "1.3.0-rc.2",
