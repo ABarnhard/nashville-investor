@@ -1,37 +1,87 @@
 doctype html
-html(ng-app='mean-template', lang='en')
+html(ng-app='prop', lang='en')
   head
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
-    meta(name='viewport', content='width=device-width, initial-scale=1')
-    title MEAN Template
+    meta(name='authors', content='Adam Barnhard, David Boling, Melanie Fryman, Logan Richardson, & Dennis Stanley')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Nashville Investor
+
     link(href='/vendor/bootstrap/dist/css/bootstrap.css', rel='stylesheet')
     link(href='/vendor/fontawesome/css/font-awesome.css', rel='stylesheet')
     link(href='/vendor/toastr/toastr.css', rel='stylesheet')
+    // FAV AND TOUCH ICONS
+    // MLF NOTE: REPLACE ICONS!!!
+    link(rel='shortcut icon', href='assets/images/icons/favicon.ico')
+    link(rel='apple-touch-icon', href='assets/images/icons/apple-touch-icon.png')
+    link(rel='apple-touch-icon', sizes='72x72', href='assets/images/icons/apple-touch-icon-72x72.png')
+    link(rel='apple-touch-icon', sizes='114x114', href='assets/images/icons/apple-touch-icon-114x114.png')
+    // STYLESHEETS
+    link(rel='stylesheet', href='vendor/zerif/css/bootstrap.min.css')
+    link(rel='stylesheet', href='vendor/zerif/css/owl.theme.css')
+    link(rel='stylesheet', href='vendor/zerif/css/owl.carousel.css')
+    link(rel='stylesheet', href='vendor/zerif/css/jquery.vegas.min.css')
+    link(rel='stylesheet', href='vendor/zerif/css/animate.min.css')
+    link(rel='stylesheet', href='assets/icon-fonts/styles.css')
+    link(rel='stylesheet', href='vendor/zerif/css/pixeden-icons.css')
+    // CUSTOM STYLES
     link(href='/index.css', rel='stylesheet')
-  body
+    link(href='/views/home/home.css', rel='stylesheet')
+    link(rel='stylesheet', href='zerif.css')
+    link(rel='stylesheet', href='vendor/zerif/css/responsive.css')
+    // WEBFONT
+    link(href='http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic|Montserrat:700,400|Homemade+Apple', rel='stylesheet', type='text/css')
+    //if lt IE 9
+    script(src='vendor/zerif/js/html5shiv.js')
+    script(src='vendor/zerif/js/respond.min.js')
+
+  body(ng-controller='HomeCtrl')
+    #loading(ng-show='isLoading')
+      #loadIcon
+        i.fa.fa-spinner.fa-4x.fa-spin
     include nav
     .container
       .row
         .col-xs-12
+      .row
+        .col-xs-12
           #container(ng-view)
 
+    script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAoOoswi3fUi-t8NCGt_zFTsDFEA4FpvoU&sensor=true')
     script(src='/vendor/jquery/dist/jquery.js')
     script(src='/vendor/angular/angular.js')
     script(src='/vendor/angular-route/angular-route.js')
     script(src='/vendor/bootstrap/dist/js/bootstrap.js')
     script(src='/vendor/underscore/underscore.js')
+    script(src='/vendor/chartjs/Chart.js')
     script(src='/vendor/toastr/toastr.js')
     script(src='/vendor/localforage/dist/localforage.js')
     script(src='/vendor/angular-localforage/dist/angular-localForage.js')
+    // *********** ZERIF SCRIPTS *********** //
+    script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js')
+    script(src='vendor/zerif/js/bootstrap.min.js')
+    script(src='vendor/zerif/js/jquery.scrollTo.min.js')
+    script(src='vendor/zerif/js/wow.min.js')
+    script(src='vendor/zerif/js/jquery.nav.js')
+    script(src='vendor/zerif/js/jquery.knob.js')
+    script(src='vendor/zerif/js/owl.carousel.min.js')
+    script(src='vendor/zerif/js/smoothscroll.js')
+    script(src='vendor/zerif/js/jquery.vegas.min.js')
+    script(src='vendor/zerif/js/zerif.js')
+
     script(src='/config/toastr.js')
+
     script(src='/index.js')
     script(src='/nav.js')
+
     script(src='/views/home/home.js')
+    script(src='/views/value/value.js')
     script(src='/views/register/register.js')
     script(src='/views/login/login.js')
     script(src='/views/logout/logout.js')
+
     script(src='/components/factories/home.js')
+    script(src='/components/value.js')
     script(src='/components/factories/user.js')
     script(src='/components/factories/http-interceptor.js')
 
