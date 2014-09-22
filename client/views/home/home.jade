@@ -1,27 +1,36 @@
-h4 {{title}}
-.row
-  .col-xs-4
-    include search
-  .col-xs-4
-    #cityMap
-  .col-xs-4
-    .panel.panel-primary
-      .panel-heading
-        h3#details.panel-title Details
-      .panel-body
-        dl.dl-horizontal
-          dt Estimated Home Value:
-          dd ${{homeValue.toFixed(2)}}
-
-.row(ng-show='loc.name')
-  .col-xs-12
-    include tabs
-
-.row#debug
-  .col-xs-12
-    pre {{loc | json}}
-    pre {{zilDrill | json}}
-    pre {{zillow | json}}
-    pre {{devApps | json}}
-    pre {{permits | json}}
-    pre {{history | json}}
+// *********** HOME SECTION, CONT. *********** //
+div.container
+  // HEADING
+  h1.intro Informative Quality Data for Nashville Property Investors
+  // CALL TO ACTION BUTTONS
+  div.buttons
+    a.btn.btn-primary.custom-button.red-btn(href='#aboutus') About Us
+    a.btn.btn-primary.custom-button.green-btn(href='#invest') Search Properties
+  // 3 SHORT MESSAGE ABOUT COMPANY
+  .row.bottom-message-section
+    .col-lg-4.col-sm-4
+      .short-text
+        i.icon.icon-fontawesome-webfont-358
+        | Property value information
+    .col-lg-4.col-sm-4
+      .short-text
+        i.icon-fontawesome-webfont-286
+        | Residential permits
+    .col-lg-4.col-sm-4
+      .short-text
+        i.icon-fontawesome-webfont-347
+        | Commercial developments
+  include invest
+  include focus
+  include separator
+  include works
+  include stats
+  include team
+  include packages
+  include features
+  include products
+  include newsletter
+  include testimonial
+  include purchase
+  include contact
+  include footer

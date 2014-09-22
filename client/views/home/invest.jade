@@ -1,0 +1,19 @@
+section#invest
+  h4 {{title}}
+  .row
+    .col-xs-4
+      include search
+    .col-xs-4
+      #cityMap
+    .col-xs-4
+      .panel.panel-primary
+        .panel-heading
+          h3#details.panel-title Details
+        .panel-body
+          dl.dl-horizontal
+            dt Estimated Home Value:
+            dd ${{homeValue.toFixed(2)}}
+
+  .row(ng-show='loc.name')
+    .col-xs-12
+      include tabs
