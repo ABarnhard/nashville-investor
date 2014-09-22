@@ -7,16 +7,15 @@ html(ng-app='prop', lang='en')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     title Nashville Investor
 
-    // STYLESHEETS
-    link(rel='stylesheet', href='/vendor/bootstrap/dist/css/bootstrap.css')
-    link(rel='stylesheet', href='/vendor/fontawesome/css/font-awesome.css')
-    link(rel='stylesheet', href='/vendor/toastr/toastr.css')
     // FAV AND TOUCH ICONS
     // MLF NOTE: REPLACE ICONS!!!
-    link(rel='shortcut icon', href='assets/images/icons/favicon.ico')
     link(rel='apple-touch-icon', href='assets/images/icons/apple-touch-icon.png')
     link(rel='apple-touch-icon', sizes='72x72', href='assets/images/icons/apple-touch-icon-72x72.png')
     link(rel='apple-touch-icon', sizes='114x114', href='assets/images/icons/apple-touch-icon-114x114.png')
+    // STYLESHEETS
+    link(rel='stylesheet', href='/vendor/normalize-css/normalize.css')
+    link(rel='stylesheet', href='/vendor/fontawesome/css/font-awesome.css')
+    link(rel='stylesheet', href='/vendor/toastr/toastr.css')
     // ZERIF STYLES
     link(rel='stylesheet', href='vendor/zerif/assets/icon-fonts/styles.css')
     link(rel='stylesheet', href='vendor/zerif/css/bootstrap.min.css')
@@ -24,29 +23,27 @@ html(ng-app='prop', lang='en')
     link(rel='stylesheet', href='vendor/zerif/css/owl.carousel.css')
     link(rel='stylesheet', href='vendor/zerif/css/jquery.vegas.min.css')
     link(rel='stylesheet', href='vendor/zerif/css/animate.min.css')
+    link(rel='shortcut icon', href='assets/images/icons/favicon.ico')
     link(rel='stylesheet', href='vendor/zerif/css/pixeden-icons.css')
-    link(rel='stylesheet', href='vendor/zerif/css/responsive.css')
     link(rel='stylesheet', href='vendor/zerif/css/styles.css')
-    // CUSTOM STYLES
+    link(rel='stylesheet', href='vendor/zerif/css/responsive.css')
     link(rel='stylesheet', href='/index.css')
     // WEBFONT
     link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic|Montserrat:700,400|Homemade+Apple')
     //if IE version < 9, run these scripts
-    script(src='vendor/zerif/js/html5shiv.js')
-    script(src='vendor/zerif/js/respond.min.js')
-
+    // MLF NOTE: FIX THIS!
+    // script(src='vendor/zerif/js/html5shiv.js')
+    // script(src='vendor/zerif/js/respond.min.js')
   body
+  // *********** PRE LOADER / WAITING *********** //
+  //.preloader
+  //  .status &nbsp; 
     // (ng-controller='HomeCtrl')
     // #loading(ng-show='isLoading')
     //  #loadIcon
     //    i.fa.fa-spinner.fa-4x.fa-spin
-    include nav
-    .container
-      .row
-        .col-xs-12
-      .row
-        .col-xs-12
-          #container(ng-view)
+  include nav
+    #container(ng-view)
 
     // SCRIPTS
     script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAoOoswi3fUi-t8NCGt_zFTsDFEA4FpvoU&sensor=true')

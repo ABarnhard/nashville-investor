@@ -20,7 +20,8 @@
     "underscore": "~1.7.0",
     "jquery": "~2.1.1",
     "toastr": "~2.0.3",
-    "chartjs": "~0.2.0"
+    "chartjs": "~0.2.0",
+    "normalize-css": "~3.0.1"
   },
   "resolutions": {
     "chartjs": "1.0.1-beta.4"
