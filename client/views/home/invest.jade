@@ -1,19 +1,29 @@
-section#invest
-  h4 {{title}}
-  .row
-    .col-xs-4
-      include search
-    .col-xs-4
-      #cityMap
-    .col-xs-4
-      .panel.panel-primary
-        .panel-heading
-          h3#details.panel-title Details
-        .panel-body
-          dl.dl-horizontal
-            dt Estimated Home Value:
-            dd ${{homeValue.toFixed(2)}}
+// *********** INVEST SECTION *********** //
+section#invest.invest
+  .container
+    // SECTION HEADER
+    .section-header
+      // SECTION TITLE
+      h2.dark-text Find Investment Opportunities
+      // SHORT DESCRIPTION ABOUT THE SECTION
+      h6
+        | Check our awesome team memebers who always work hard to provide quality products.
+    // FIND INVESTMENTS
+    .row.wow.fadeInRight.animated(data-wow-offset='40', data-wow-duration='3s', data-wow-delay='0.15s')
+      // SEARCH FORM
+      .col-lg-4.col-sm-4
+        include search
+      .col-lg-4.col-sm-4
+        #cityMap
+      .col-lg-4.col-sm-4
+        .panel.panel-primary
+          .panel-heading
+            h3#details.panel-title Details
+          .panel-body
+            dl.dl-horizontal
+              dt Estimated Home Value:
+              dd ${{homeValue.toFixed(2)}}
 
-  .row(ng-show='loc.name')
-    .col-xs-12
-      include tabs
+    .row(ng-show='loc.name')
+      .col-lg-12.col-sm-12
+        include tabs

@@ -9,7 +9,8 @@
       .form-group
         label.col-xs-2.control-label(for='street') Street
         .col-xs-10
-          input#street.form-control(type='text', name='street', ng-model='loc.street', required, autofocus)
+          // MLF NOTE: I removed autofocus from this element because it interferred with 1 page scrolling focus
+          input#street.form-control(type='text', name='street', ng-model='loc.street', required)
       .form-group
         label.col-xs-2.control-label(for='city') City
         .col-xs-10
