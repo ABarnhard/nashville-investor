@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // *********** INVEST SECTION *********** //
 section#invest.invest
   .container
@@ -27,3 +28,23 @@ section#invest.invest
     .row(ng-show='loc.name')
       .col-lg-12.col-sm-12
         include tabs
+=======
+h4 {{title}}
+.row
+  .col-xs-4
+    include search
+  .col-xs-4
+    #cityMap
+  .col-xs-4
+    .panel.panel-primary
+      .panel-heading
+        h3#details.panel-title Details
+      .panel-body
+        dl.dl-horizontal
+          dt Estimated Home Value:
+          dd ${{homeValue.toFixed(2)}}
+
+.row(ng-show='loc.name')
+  .col-xs-12
+    include tabs
+>>>>>>> a6c961ec37607099ede5abd6530e6cac94707b66

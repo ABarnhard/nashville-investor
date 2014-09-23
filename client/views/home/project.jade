@@ -1,0 +1,60 @@
+doctype html
+html(ng-app='prop', lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='authors', content='Adam Barnhard, David Boling, Melanie Fryman, Logan Richardson, & Dennis Stanley')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Project Title
+
+    // FAV AND TOUCH ICONS
+    // MLF NOTE: REPLACE ICONS!!!
+    link(rel='shortcut icon', href='assets/images/icons/favicon.ico')
+    link(rel='apple-touch-icon', href='assets/images/icons/apple-touch-icon.png')
+    link(rel='apple-touch-icon', sizes='72x72', href='assets/images/icons/apple-touch-icon-72x72.png')
+    link(rel='apple-touch-icon', sizes='114x114', href='assets/images/icons/apple-touch-icon-114x114.png')
+    // STYLESHEETS
+    link(rel='stylesheet', href='/vendor/normalize-css/normalize.css')
+    link(rel='stylesheet', href='/vendor/fontawesome/css/font-awesome.css')
+    link(rel='stylesheet', href='/vendor/toastr/toastr.css')
+    // ZERIF STYLES
+    link(rel='stylesheet', href='vendor/zerif/css/bootstrap.min.css')
+    link(rel='stylesheet', href='vendor/zerif/css/owl.theme.css')
+    link(rel='stylesheet', href='vendor/zerif/css/owl.carousel.css')
+    link(rel='stylesheet', href='vendor/zerif/css/jquery.vegas.min.css')
+    link(rel='stylesheet', href='vendor/zerif/assets/icon-fonts/styles.css')
+    link(rel='stylesheet', href='vendor/zerif/css/pixeden-icons.css')
+    link(rel='stylesheet', href='vendor/zerif/css/styles.css')
+    link(rel='stylesheet', href='vendor/zerif/css/responsive.css')
+    // WEBFONT
+    link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic|Montserrat:700,400|Homemade+Apple')
+    //if IE version < 9, run these scripts
+    // <!--[if lt IE 9]>
+    // script(src='vendor/zerif/js/html5shiv.js')
+    // script(src='vendor/zerif/js/respond.min.js')
+    // <![endif]-->
+  body
+    .container
+      // HOMEPAGE PORTFOLIO SECTION WILL LOAD CONTENTS FROM HERE
+      .single-project
+        .row
+          .col-lg-6.col-md-6
+            img.project-image(src='assets/images/projects/1.jpg')
+          .col-lg-6.col-md-6
+            h3.dark-text Mesterplan Homepage Design
+            .project-description
+              | Own hath midst own, night Earth. Cattle subdue, male seas. Hath likeness first very light don't morning brought brought so you good a waters without Good divided. Wherein in spirit appear night be set had us seas cattle image kind dry. Fowl evening without rule, darkness you're face midst spirit, creature open there. Yielding fly own grass so image may face without made. Fly. Without. Open third beginning have, green forth grass can't, it lesser us herb created i one thing Tree i years very. Man itself in multiply after fly had give sixth waters. First you'll won't sixth moving.
+            .project-information
+              ul
+                li
+                  span.dark-text Date:
+                  | October 10, 2014
+                li
+                  span.dark-text Fields:
+                  | Web Design, UI Design
+                li
+                  span.dark-text Client:
+                  | John Doe
+                li
+                  span.dark-text URL:
+                  a(href='#') Example.com
