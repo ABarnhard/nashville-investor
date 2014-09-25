@@ -37,7 +37,6 @@
         $scope.markers.main.push(addMarker($scope.map, lat, lng, name, '/assets/images/markers/main-icon.png'));
         $scope.addHistory();
         $scope.getMedian();
-        $scope.hideReset = false;
       });
     };
 
@@ -45,11 +44,13 @@
       $scope.map.panTo(new google.maps.LatLng(35.788399, -86.67444089999998));
       $scope.map.setZoom(5);
       $scope.hideReset = true;
-      $scope.loc = {};
+      $scope.loc = {city:'Nashville', state:'TN'};
       $scope.homeValue = null;
       Object.keys($scope.markers).forEach(function(key){
+        clearMarkers($scope.markers[key]);
         $scope.markers[key] = [];
       });
+      $scope.permits = $scope.devApps = null;
     };
 
     $scope.searchPermits = function(){
@@ -86,6 +87,7 @@
       Value.getData($scope.loc.street, $scope.loc.city, $scope.loc.state, $scope.loc.zip).then(function(response){
         $scope.homeValue = response.data.zestimate;
         createBar(response.data.zestimate, response.data.demoCity, response.data.demoNation);
+        $scope.hideReset = false;
         $scope.$emit('UNLOAD');
       });
     };
