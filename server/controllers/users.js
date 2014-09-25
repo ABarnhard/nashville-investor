@@ -35,3 +35,12 @@ exports.logout = function(req, res){
   });
 };
 
+// send email //
+
+exports.sendMail = function(req, res){
+  console.log(req.body);
+  User.sendMail(req.body, function(err){
+    res.status(200).end();
+  });
+};
+

@@ -5,7 +5,7 @@
   'use strict';
 
   angular.module('prop')
-  .controller('HomeCtrl', ['$scope', '$timeout', 'Home', 'Permit', 'DevApp', 'Value', function($scope, $timeout, Home, Permit, DevApp, Value){
+  .controller('HomeCtrl', ['User', '$scope', '$timeout', 'Home', 'Permit', 'DevApp', 'Value', function(User, $scope, $timeout, Home, Permit, DevApp, Value){
     $scope.title = 'Nashville Investor';
 
     $scope.tab = 1;
@@ -16,17 +16,28 @@
     $scope.history = [];
     $scope.hideReset = true;
 
+    // messaging //
+    $scope.email = {};
+
+    $scope.sendMail = function(){
+      User.sendMail($scope.email).then(function(response){
+        toastr.success('Message Sent!');
+        $scope.email = {};
+      });
+    };
+
+    //---- End Messaging ----//
+
     $scope.$on('LOAD', function(){$scope.isLoading=true;});
     $scope.$on('UNLOAD', function(){$scope.isLoading=false;});
 
     angular.element(document).ready(function(){
-      $scope.map = cartographer('cityMap', 35.788399, -86.67444089999998, 5);
+      $scope.map = cartographer('cityMap', 36.1667, -86.7833, 8);
     });
 
     $scope.loc = {street:'915 Glendale Ln', city:'Nashville', state:'TN', zip:'37204'};
 
     $scope.geocodeAndSearch = function(){
-      $scope.$emit('LOAD');
       var address = $scope.loc.street + ', ' + $scope.loc.city + ', ' + $scope.loc.state + ' ' + $scope.loc.zip;
       geocode(address, function(name, lat, lng){
         $scope.loc.name = name;
@@ -41,8 +52,8 @@
     };
 
     $scope.newSearch = function(){
-      $scope.map.panTo(new google.maps.LatLng(35.788399, -86.67444089999998));
-      $scope.map.setZoom(5);
+      $scope.map.panTo(new google.maps.LatLng(36.1667, -86.7833));
+      $scope.map.setZoom(8);
       $scope.hideReset = true;
       $scope.loc = {city:'Nashville', state:'TN'};
       $scope.homeValue = null;
