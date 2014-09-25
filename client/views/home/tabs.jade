@@ -1,13 +1,15 @@
 #tabs(ng-show='loc.name')
-  ul
-    li(ng-class='{active:isSelected(1)}')
+  ul.nav.nav-pills
+    li.selection(ng-class='{tabActive:isSelected(1)}')
       a(href='', ng-click='selectTab(1)') Home Value
-    li(ng-class='{active:isSelected(2)}')
+    li.selection(ng-class='{tabActive:isSelected(2)}')
       a(href='', ng-click='selectTab(2)') Residential Development
-    li(ng-class='{active:isSelected(3)}')
+    li.selection(ng-class='{tabActive:isSelected(3)}')
       a(href='', ng-click='selectTab(3)') Commercial Development
     br
   #dataContent
+    #loading(ng-show='isLoading') 
+     #loadIcon: i.fa.fa-cog.fa-spin.fa-4x
     .content(ng-show='isSelected(1)')
       canvas#value(style='width: 300px; height: 300px')
     .content(ng-show='isSelected(2)')
@@ -22,4 +24,3 @@
           tr(ng-repeat='r in appRows')
             td {{r.project}}
             td {{r.meetingDate | date:'mediumDate'}}
-

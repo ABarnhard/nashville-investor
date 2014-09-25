@@ -38,9 +38,6 @@
         $scope.addHistory();
         $scope.getMedian();
         $scope.hideReset = false;
-        $timeout(function(){
-          $scope.$emit('UNLOAD');
-        }, 1500);
       });
     };
 
@@ -85,9 +82,11 @@
     //Zestimate and Demographic Median Sale Price/Bar Graph
     //Size of canvas handled in createBar()
     $scope.getMedian = function(){
+      $scope.$emit('LOAD');
       Value.getData($scope.loc.street, $scope.loc.city, $scope.loc.state, $scope.loc.zip).then(function(response){
         $scope.homeValue = response.data.zestimate;
         createBar(response.data.zestimate, response.data.demoCity, response.data.demoNation);
+        $scope.$emit('UNLOAD');
       });
     };
 

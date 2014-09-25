@@ -11,34 +11,69 @@ input.ng-invalid{
 #locButtons{
   margin: 5px;
 }
-#cityMap{
-  width: 400px;
-  height: 400px;
+#invest {
+  min-height: 500px;
+  max-height: 100%;
+  width: 100%;
 }
+#cityMap{
+  width: 100%;
+  min-height: 400px !important;
+  max-height: 100%;
+}
+
+//Loading Icon
+#dataContent {
+  position: relative;
+  min-height: 300px;
+}
+
 #loading{
-  position: fixed;
+  position: absolute;
   background-color: rgba(211, 211, 211, 0.75);
   z-index: 999;
   top: 0;
-  left: 0;
+  bottom:0;
   width: 100%;
   height: 100%;
 }
 #loadIcon{
-  position: fixed;
+  position: absolute;
   top: 40%;
   left: 50%;
   width: 50px;
   height: 50px;
 }
+
+//Tabbing System
+.peninsula {
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+  border-left: 1px solid rgba(0, 0, 0, 0.5);
+  border-right: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+.selection {
+    .peninsula;
+    font-size: 1.2em;
+}
+.tabActive {
+  background-color: rgba(211, 211, 211, 0.4);
+}
 #tabs ul{
   list-style: none;
+  margin-top: 20px;
 
   & li{
     display: inline-block;
     margin-right: 20px;
   }
+
 }
+.content {
+      padding-top: 10px;
+      background-color: rgba(211, 211, 211, 0.4);
+}
+
 .toggle{
   cursor: pointer;
 }
@@ -49,8 +84,8 @@ input.ng-invalid{
   background: #FFFFFF;
   margin-right: 3px;
   margin-left: 3px;
+  width: 100%;
 }
-
 /*===  GLOBAL STYLES  ===*/
 html{
   font-size: 100%;
