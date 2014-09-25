@@ -13,7 +13,7 @@ module.exports = function(grunt){
     // ---------------------------------------------------------------------- //
     jshint: {
       options: {jshintrc: '.jshintrc', reporter: require('jshint-stylish')},
-      all: ['Gruntfile.js', 'client/**/*.js', 'server/**/*.js']
+      all: ['Gruntfile.js', 'client/**/*.js', '!client/vendor/**/*.js', 'server/**/*.js']
     },
     // ---------------------------------------------------------------------- //
     jscs: {
@@ -76,6 +76,12 @@ module.exports = function(grunt){
         src: ['favicon.ico'],
         dest: 'public',
         expand: true
+      },
+      zerif: {
+        cwd: 'client/vendor',
+        src: ['**/*'],
+        dest: 'public/vendor',
+        expand: true
       }
     }
     // ---------------------------------------------------------------------- //
@@ -91,7 +97,7 @@ module.exports = function(grunt){
   grunt.loadNpmTasks('grunt-shell');
 
   grunt.registerTask('deploy', ['clean', 'build', 'shell:bower']);
-  grunt.registerTask('build', ['jshint:all', 'jscs', 'jade', 'less', 'copy:js', 'copy:assets', 'copy:favicon']);
+  grunt.registerTask('build', ['jshint:all', 'jscs', 'jade', 'less', 'copy:js', 'copy:assets', 'copy:favicon', 'copy:zerif']);
   grunt.registerTask('default', ['build', 'watch']);
 };
 
