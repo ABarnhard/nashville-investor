@@ -1,0 +1,252 @@
+.pixeden  {
+  height: 63px;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  display: block;
+}
+
+.pd-icon-monitor {
+  background: url(icon-monitor.png) no-repeat;
+  width: 68px;
+}
+
+.pd-icon-camera {
+  background: url(icon-camera.png) no-repeat;
+  width: 66px;
+}
+
+.pd-icon-check {
+  background: url(icon-check.png) no-repeat;
+  width: 62px;
+}
+
+.pd-icon-email-marketing {
+  background: url(icon-openmail.png) no-repeat;
+  width: 61px;
+}
+
+.pd-icon-worldmap {
+  background: url(icon-worldmap.png) no-repeat;
+  width: 61px;
+}
+
+.pd-icon-voicemail {
+  background: url(icon-voicemail.png) no-repeat;
+  width: 57px;
+}
+
+.pd-icon-wallet {
+  background: url(icon-wallet.png) no-repeat;
+  width: 67px;
+}
+
+.pd-icon-view {
+  background: url(icon-view.png) no-repeat;
+  width: 62px;
+}
+
+.pd-icon-user {
+  background: url(icon-user.png) no-repeat;
+  width: 62px;
+}
+
+.pd-icon-upload2 {
+  background: url(icon-upload2.png) no-repeat;
+  width: 57px;
+}
+
+.pd-icon-upload {
+  background: url(icon-upload.png) no-repeat;
+  width: 57px;
+}
+
+.pd-icon-truck {
+  background: url(icon-truck.png) no-repeat;
+  width: 63px;
+}
+
+.pd-icon-ticket {
+  background: url(icon-ticket.png) no-repeat;
+  width: 54px;
+}
+
+.pd-icon-tablet {
+  background: url(icon-tablet.png) no-repeat;
+  width: 61px;
+}
+
+.pd-icon-statistics {
+  background: url(icon-statistics.png) no-repeat;
+  width: 62px;
+}
+
+.pd-icon-shop {
+  background: url(icon-shop.png) no-repeat;
+  width: 68px;
+}
+
+.pd-icon-search {
+  background: url(icon-search.png) no-repeat;
+  width: 62px;
+}
+
+.pd-icon-ribbon {
+  background: url(icon-ribbon.png) no-repeat;
+  width: 48px;
+}
+
+.pd-icon-responsive {
+  background: url(icon-responsive.png) no-repeat;
+  width: 66px;
+}
+
+.pd-icon-print {
+  background: url(icon-print.png) no-repeat;
+  width: 62px;
+}
+
+.pd-icon-portfolio {
+  background: url(icon-portfolio.png) no-repeat;
+  width: 67px;
+}
+
+.pd-icon-photo {
+  background: url(icon-photo.png) no-repeat;
+  width: 69px;
+}
+
+.pd-icon-phone {
+  background: url(icon-phone.png) no-repeat;
+  width: 44px;
+}
+
+.pd-icon-notes {
+  background: url(icon-notes.png) no-repeat;
+  width: 63px;
+}
+
+.pd-icon-money {
+  background: url(icon-money.png) no-repeat;
+  width: 62px;
+}
+
+.pd-icon-media {
+  background: url(icon-media.png) no-repeat;
+  width: 62px;
+}
+
+.pd-icon-map {
+  background: url(icon-map.png) no-repeat;
+  width: 69px;
+}
+
+.pd-icon-lock {
+  background: url(icon-lock.png) no-repeat;
+  width: 53px;
+}
+
+.pd-icon-help {
+  background: url(icon-help.png) no-repeat;
+  width: 62px;
+}
+
+.pd-icon-heart {
+  background: url(icon-heart.png) no-repeat;
+  width: 66px;
+}
+
+.pd-icon-graph {
+  background: url(icon-graph.png) no-repeat;
+  width: 66px;
+}
+
+.pd-icon-folder {
+  background: url(icon-folder.png) no-repeat;
+  width: 70px;
+}
+
+.pd-icon-flag {
+  background: url(icon-flag.png) no-repeat;
+  width: 62px;
+}
+
+.pd-icon-film {
+  background: url(icon-film.png) no-repeat;
+  width: 52px;
+}
+
+.pd-icon-file {
+  background: url(icon-file.png) no-repeat;
+  width: 50px;
+}
+
+.pd-icon-drop {
+  background: url(icon-drop.png) no-repeat;
+  width: 48px;
+}
+
+.pd-icon-download {
+  background: url(icon-download.png) no-repeat;
+  width: 58px;
+}
+
+.pd-icon-disk {
+  background: url(icon-disk.png) no-repeat;
+  width: 62px;
+}
+
+.pd-icon-culture {
+  background: url(icon-culture.png) no-repeat;
+  width: 62px;
+}
+
+.pd-icon-console {
+  background: url(icon-console.png) no-repeat;
+  width: 57px;
+}
+
+.pd-icon-config {
+  background: url(icon-config.png) no-repeat;
+  width: 62px;
+}
+
+.pd-icon-compas {
+  background: url(icon-compas.png) no-repeat;
+  width: 57px;
+}
+
+.pd-icon-comments {
+  background: url(icon-comments.png) no-repeat;
+  width: 67px;
+}
+
+.pd-icon-clock {
+  background: url(icon-clock.png) no-repeat;
+  width: 61px;
+}
+
+.pd-icon-calendar {
+  background: url(icon-calendar.png) no-repeat;
+  width: 69px;
+}
+
+.pd-icon-book {
+  background: url(icon-book.png) no-repeat;
+  width: 55px;
+}
+
+.pd-icon-bag2 {
+  background: url(icon-bag2.png) no-repeat;
+  width: 67px;
+}
+
+.pd-icon-bag {
+  background: url(icon-bag.png) no-repeat;
+  width: 58px;
+}
+
+.pd-icon-arrows {
+  background: url(icon-arrows.png) no-repeat;
+  width: 61px;
+}
