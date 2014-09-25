@@ -22,7 +22,7 @@ section#invest.invest
           .panel-body
             dl.dl-horizontal
               dt Estimated Home Value:
-              dd ${{homeValue.toFixed(2)}}
+              dd {{homeValue | currency}}
 
     .row(ng-show='loc.name')
       .col-lg-12.col-sm-12

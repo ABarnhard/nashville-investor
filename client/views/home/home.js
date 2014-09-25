@@ -14,6 +14,7 @@
     $scope.markers.permits = [];
     $scope.markers.apps = [];
     $scope.history = [];
+    $scope.hideReset = true;
 
     $scope.$on('LOAD', function(){$scope.isLoading=true;});
     $scope.$on('UNLOAD', function(){$scope.isLoading=false;});
@@ -36,9 +37,21 @@
         $scope.markers.main.push(addMarker($scope.map, lat, lng, name, '/assets/images/markers/main-icon.png'));
         $scope.addHistory();
         $scope.getMedian();
+        $scope.hideReset = false;
         $timeout(function(){
           $scope.$emit('UNLOAD');
         }, 1500);
+      });
+    };
+
+    $scope.newSearch = function(){
+      $scope.map.panTo(new google.maps.LatLng(35.788399, -86.67444089999998));
+      $scope.map.setZoom(5);
+      $scope.hideReset = true;
+      $scope.loc = {};
+      $scope.homeValue = null;
+      Object.keys($scope.markers).forEach(function(key){
+        $scope.markers[key] = [];
       });
     };
 

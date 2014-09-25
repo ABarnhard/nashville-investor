@@ -1,7 +1,12 @@
-.panel.panel-primary
-  .panel-heading(data-toggle='collapse', data-target='.toggle')
+.panel.panel-primary#search-panel
+  .panel-heading
     h3#search.panel-title  Search Investments
-  .panel-body.toggle
+    .search-results(ng-hide='hideReset')
+      dl.dl-horizontal
+        dt Estimated Home Value:
+        dd {{homeValue | currency}}
+        dd: button.btn.btn-success.btn-sm.pull-right(type='button', ng-click='newSearch()', data-toggle='collapse', data-parent='#search-panel', data-target='#toggle-panel') New Search
+  .panel-body#toggle-panel.panel-collapse.collapse.in
     form.form-horizontal(role='form', name='locForm', novalidate)
       input(type='hidden', ng-model='loc.lat')
       input(type='hidden', ng-model='loc.lng')
@@ -24,7 +29,7 @@
           input#zip.form-control(type='text', name='zip', ng-model='loc.zip', ng-pattern='/^[0-9]{5}$/', required)
       .form-group#locButtons
         // button.btn.btn-default.btn-sm.pull-left(ng-show='locForm.$valid') Cancel
-        button.btn.btn-success.btn-sm.pull-right(ng-show='locForm.$valid', ng-click='geocodeAndSearch()', data-toggle='collapse', data-target='.toggle') Voltron GO!
+        button.btn.btn-success.btn-sm.pull-right(ng-click='geocodeAndSearch()', data-toggle='collapse', data-parent='#search-panel', data-target='#toggle-panel') Search
       //.form-group#locButtons
       //  button.btn.btn-primary.btn-sm.pull-left(ng-show='locForm.$valid', ng-click='searchPermits()') Find Permits
       //  button.btn.btn-primary.btn-sm.pull-right(ng-show='locForm.$valid', ng-click='searchApps()') Find Apps
