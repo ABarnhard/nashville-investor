@@ -1,6 +1,7 @@
 'use strict';
 
 var bcrypt = require('bcrypt'),
+    Mailgun = require('mailgun-js'),
     Mongo  = require('mongodb');
 
 function User(){
@@ -31,6 +32,21 @@ User.login = function(o, cb){
     cb(null, user);
   });
 };
+
+User.sendMail = function(email ,cb){
+  sendMail(email, cb);
+};
+
+//HELPER FUNCTIONS
+function sendMail(email, cb){
+  var mailgun = new Mailgun({apiKey:'key-3a44495dd7b1ca0cf1364c996a745e5a', domain:'sandbox8cf072223c7743ba9a6bde64c8756a28.mailgun.org'}),
+      data    = {from:email.email, to:'teamvoltron@mailinator.com', subject:email.subject, html:email.body};
+
+  mailgun.messages().send(data, function(a, b , c){
+    console.log(a, b, c);
+    cb();
+  });
+}
 
 module.exports = User;
 

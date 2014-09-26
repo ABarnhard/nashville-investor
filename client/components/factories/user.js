@@ -4,6 +4,10 @@
   angular.module('prop')
   .factory('User', ['$http', function($http){
 
+    function sendMail(email){
+      return $http.post('/sendMail', email);
+    }
+
     function register(user){
       return $http.post('/register', user);
     }
@@ -16,7 +20,7 @@
       return $http.delete('/logout');
     }
 
-    return {register:register, login:login, logout:logout};
+    return {register:register, login:login, logout:logout, sendMail:sendMail};
   }]);
 })();
 
