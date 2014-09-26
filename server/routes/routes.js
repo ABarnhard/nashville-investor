@@ -30,6 +30,7 @@ module.exports = function(app, express){
   app.get('/permits', permits.index);
   app.get('/devapps', devApps.index);
   app.get('/value', value.getData);
+  app.post('/sendMail', users.sendMail);
 
   app.use(security.bounce);
   app.delete('/logout', users.logout);
