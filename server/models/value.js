@@ -27,7 +27,7 @@ Value.getData = function(query, cb){
         zest = 0;
       }
       else{
-        zest = zestimate['SearchResults:searchresults'].response.results.result.zestimate.amount.$t;
+        zest = zestimate['SearchResults:searchresults'].response.results.result.zestimate.amount.$t || 0;
       }
 
       //data massage
