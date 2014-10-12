@@ -176,11 +176,11 @@
       labels: ['Home', 'City', 'Nation'],
       datasets: [
         {
-          fillColor: 'rgba(0, 0, 0, 1)',
-          strokeColor: 'rgba(0, 0, 0, 1.0)',
-          highlightFill: 'rgba(220,220,220,1)',
-          highlightStroke: 'rgba(220,220,220,1)',
-          data: [zest, demoCity, demoNation, 0]
+          fillColor: 'rgba(69,220,20,0.5)',
+          strokeColor: 'rgba(69,220,20,0.8)',
+          highlightFill: 'rgba(69,200,20,1)',
+          highlightStroke: 'rgba(69,200,20,1)',
+          data: [zest, demoCity, demoNation]
         }
       ]
     },
