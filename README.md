@@ -2,7 +2,7 @@
 =======================
 
 ### Code Badges
-forthcoming
+[![Build Status](https://travis-ci.org/mlfryman/nashville-investor.svg)](https://travis-ci.org/mlfryman/nashville-investor)
 
 ### Screenshots
 forthcoming
