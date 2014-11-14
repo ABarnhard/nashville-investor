@@ -35,7 +35,7 @@
       $scope.map = cartographer('cityMap', 36.1667, -86.7833, 8);
     });
 
-    $scope.loc = {street:'915 Glendale Ln', city:'Nashville', state:'TN', zip:'37204'};
+    $scope.loc = {};
 
     $scope.geocodeAndSearch = function(){
       var address = $scope.loc.street + ', ' + $scope.loc.city + ', ' + $scope.loc.state + ' ' + $scope.loc.zip;
