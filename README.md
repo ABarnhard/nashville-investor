@@ -1,9 +1,8 @@
 # Nashville Investor
-=======================
-
+<!--
 ### Code Badges
 [![Build Status](https://travis-ci.org/ABarnhard/nashville-investor.svg)](https://travis-ci.org/ABarnhard/nashville-investor)
-
+-->
 ### Description
 An application that leverages Nashville's Open Data API to find information about contruction around a property to help investors determine its value.
 
