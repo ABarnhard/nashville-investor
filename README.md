@@ -2,39 +2,15 @@
 =======================
 
 ### Code Badges
-[![Build Status](https://travis-ci.org/mlfryman/nashville-investor.svg)](https://travis-ci.org/mlfryman/nashville-investor)
-
-### Screenshots
-forthcoming
+[![Build Status](https://travis-ci.org/ABarnhard/nashville-investor.svg)](https://travis-ci.org/ABarnhard/nashville-investor)
 
 ### Description
-forthcoming
-
-### Models
-```
-Model 1
-```
-
-```
-Model 2
-```
-
-### Database
-```
-Collecion 1
-```
-
-```
-Collection 2
-```
+An application that leverages Nashville's Open Data API to find information about contruction around a property to help investors determine its value.
 
 ### Features
 - [x] Node.js
 - [x] Angular.js
-- [ ] Feature 3
-- [ ] Feature 4
-- [ ] Feature 5
-- [ ] Feature 6
+- [X] Express
 
 ### Running Tests
 ```bash
